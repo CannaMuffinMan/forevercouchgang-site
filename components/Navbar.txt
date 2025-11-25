@@ -1,0 +1,13 @@
+export default function Navbar() {
+  return (
+    <nav className="flex justify-between items-center p-4 bg-black/50 backdrop-blur-sm">
+      <a href="/" className="text-2xl font-bold text-purple-400">🛋️ FCG</a>
+      <div className="space-x-4">
+        <a href="/manifesto" className="hover:text-purple-400">Manifesto</a>
+        <a href="/validators" className="hover:text-purple-400">Validators</a>
+        <a href="/roadmap" className="hover:text-purple-400">Roadmap</a>
+        <a href="https://discord.gg/YOUR_DISCORD" className="bg-purple-600 px-4 py-2 rounded hover:bg-purple-700">Join Discord</a>
+      </div>
+    </nav>
+  )
+}

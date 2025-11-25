@@ -1,0 +1,28 @@
+'use client'
+import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
+
+export default function ValidatorCounter() {
+  const [count, setCount] = useState(1) // Starts at 1 (you)
+
+  useEffect(() => {
+    // Fetch from public/validators.json or Google Sheet API later
+    fetch('/validators.json')
+      .then(res => res.json())
+      .then(data => setCount(data.filled))
+      .catch(() => setCount(1))
+  }, [])
+
+  return (
+    <motion.div 
+      initial={{ scale: 0 }}
+      animate={{ scale: 1 }}
+      className="mb-12"
+    >
+      <div className="text-6xl font-mono text-green-400 mb-4">
+        {count}/67
+      </div>
+      <p className="text-lg">Genesis Validators Filled</p>
+    </motion.div>
+  )
+}

@@ -1,0 +1,10 @@
+export default function Manifesto() {
+  return (
+    <div className="prose prose-invert max-w-none p-8">
+      <h1 className="text-5xl mb-8">The Manifesto</h1>
+      <p>Built by a disabled vet who's been through the legal meat grinder. This is our middle finger to centralized algo overlords. Couch rotting = earning. No pre-mine. 67 validators. Pure degen from block 0.</p>
+      {/* Add your full story here */}
+      <p>Coming soon: Full chapters from the memoir.</p>
+    </div>
+  )
+}

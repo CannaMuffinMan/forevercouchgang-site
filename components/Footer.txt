@@ -1,0 +1,7 @@
+export default function Footer() {
+  return (
+    <footer className="p-4 text-center bg-black/50">
+      <p>&copy; 2025 Forever Couch Gang, LLC. Rot responsibly. | <a href="https://x.com/CannaMuffinMan">X</a> | <a href="https://t.me/fcg">Telegram</a></p>
+    </footer>
+  )
+}

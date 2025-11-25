@@ -1,0 +1,19 @@
+import ValidatorCounter from '../../components/ValidatorCounter'
+
+export default function Validators() {
+  return (
+    <div className="p-8">
+      <h1 className="text-4xl mb-8">Genesis Validators – 67 Slots</h1>
+      <ValidatorCounter />
+      <iframe 
+        src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true" 
+        width="100%" 
+        height="800" 
+        frameBorder="0"
+      >
+        Loading…
+      </iframe>
+      <p className="mt-8">Submit your pubkey, moniker, and stake. First 67 get in.</p>
+    </div>
+  )
+}

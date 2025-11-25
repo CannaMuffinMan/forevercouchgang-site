@@ -1,0 +1,13 @@
+export default function Roadmap() {
+  return (
+    <div className="p-8">
+      <h1 className="text-4xl mb-8">Roadmap</h1>
+      <ul className="space-y-4">
+        <li>Q4 2025: Site Live, Validator Recruitment</li>
+        <li>Q1 2026: Testnet, 67 GVs Locked</li>
+        <li>Q2 2026: Mainnet Launch, Couch Potato App Beta</li>
+        <li>Q3 2026: $FCGC Rewards, Gift Card Redemptions</li>
+      </ul>
+    </div>
+  )
+}

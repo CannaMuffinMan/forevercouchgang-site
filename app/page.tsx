@@ -5,7 +5,7 @@ export default function Home() {
       <p style={{fontSize: '2rem', margin: '2rem 0'}}>67 Genesis Validators • Recruiting Now</p>
       <div style={{fontSize: '6rem', fontWeight: 'bold', color: '#22c55e'}}>1/67</div>
       <p style={{marginTop: '2rem'}}>forevercouchgang.blockchain – Coming Soon</p>
-      <a href="https://discord.gg/YOURDISCORD" style={{marginTop: '3rem', padding: '1rem 2rem', background: '#c026d3', borderRadius: '50px', textDecoration: 'none'}}>Join the Rot</a>
+      <a href="https://discord.gg/6HQfkQJRXw" style={{marginTop: '3rem', padding: '1rem 2rem', background: '#c026d3', borderRadius: '50px', textDecoration: 'none'}}>Join the Rot</a>
     </div>
   )
 }

@@ -1,11 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',           // ← THIS LINE MAKES THE "out" FOLDER
+  output: 'export',
+  trailingSlash: true,  // ← This ensures all paths export
   reactStrictMode: true,
   swcMinify: true,
-  images: {
-    unoptimized: true
-  }
+  images: { unoptimized: true }
 };
 
 module.exports = nextConfig;

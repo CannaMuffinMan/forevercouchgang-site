@@ -1,33 +1,46 @@
-'use client'
-import { motion } from 'framer-motion'
-import ValidatorCounter from '../components/ValidatorCounter'
-
 export default function Home() {
   return (
-    <div className="relative flex flex-col items-center justify-center min-h-[80vh] p-8 text-center">
-      <motion.h1 
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="text-6xl md:text-8xl font-bold mb-8 text-purple-400"
-      >
+    <div style={{
+      minHeight: '100vh',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      textAlign: 'center',
+      padding: '2rem',
+      background: 'black',
+      color: 'white',
+      fontFamily: 'monospace'
+    }}>
+      <h1 style={{fontSize: '4rem', color: '#c026d3', marginBottom: '1rem'}}>
         Forever Couch Gang
-      </motion.h1>
-      <motion.p 
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2 }}
-        className="text-xl md:text-2xl mb-12 max-w-2xl"
+      </h1>
+      <p style={{fontSize: '2rem', marginBottom: '2rem'}}>
+        The Blockchain for Couch Potatoes
+      </p>
+      <div style={{fontSize: '7rem', fontWeight: 'bold', color: '#22c55e'}}>
+        1/67
+      </div>
+      <p style={{fontSize: '1.5rem', margin: '2rem 0'}}>
+        Genesis Validators Recruiting Now
+      </p>
+      <a 
+        href="https://discord.gg/6HQfkQJRXw" 
+        style={{
+          marginTop: '3rem',
+          padding: '1rem 3rem',
+          background: '#c026d3',
+          color: 'white',
+          borderRadius: '50px',
+          fontSize: '1.5rem',
+          textDecoration: 'none'
+        }}
       >
-        The Blockchain for Couch Rotters. Earn $FCGC by watching, sharing, and decaying in peace.
-      </motion.p>
-      <ValidatorCounter />
-      <motion.button 
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        className="mt-8 px-8 py-4 bg-purple-600 hover:bg-purple-700 rounded-full text-lg font-bold"
-      >
-        Join the Rot – Discord
-      </motion.button>
+        Join the Rot
+      </a>
+      <p style={{marginTop: '4rem', fontSize: '1rem', opacity: 0.6}}>
+        forevercouchgang.blockchain
+      </p>
     </div>
   )
 }
